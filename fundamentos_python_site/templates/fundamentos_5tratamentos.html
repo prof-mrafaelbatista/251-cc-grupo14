@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Fundamentos{% endblock %}
+{% block conteudo %}
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Fundamentos de Python</title>
+  <style>
+
+
+    h1 {
+      color: #00ffff; /* ciano claro */
+      margin-bottom: 1px;
+      margin-top:10px;
+    }
+
+    h2 {
+      color: #ffcc00; /* amarelo ouro */
+      border-bottom: 1px solid #ffcc00;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    h3 {
+      color: #ff69b4; /* rosa claro */
+      margin-top: 20px;
+    }
+
+    .codigo {
+      background-color: #1e1e1e;
+      color: #90ee90; /* verde claro */
+      padding: 10px;
+      border-radius: 5px;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Fundamentos da Programação em Python</h1>
+<h2>Tratamentos de Exceção</h2>
+  <h3>Conceito</h3>
+  <p>Permitem lidar com erros de forma controlada, evitando que o programa quebre inesperadamente.</p>
+
+  <h3>Aplicação</h3>
+  <p>Útil ao lidar com entrada de dados do usuário, operações de arquivos, divisão por zero, etc.</p>
+
+  <h3>Exemplo de código</h3>
+  <div class="codigo">
+try:
+    numero = int(input("Digite um número: "))
+    resultado = 10 / numero
+    print("Resultado:", resultado)
+except ValueError:
+    print("Por favor, digite um número válido.")
+except ZeroDivisionError:
+    print("Não é possível dividir por zero.")
+  </div>
+
+</body>
+</html>
+
+
+{% endblock %}

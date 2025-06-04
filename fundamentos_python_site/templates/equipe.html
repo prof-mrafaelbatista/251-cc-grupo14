@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+{% block title %}
+<h1>Equipe</h1>
+{% endblock %}
+
+{% block conteudo %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Fundamentos de Python - Nossa Equipe</title>
+  <style>
+
+
+    h1 {
+      color: #00ffff;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #ffcc00;
+      border-bottom: 1px solid #ffcc00;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    ul.equipe {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      max-width: 700px;
+      margin: 0
+    }
+
+    ul.equipe li {
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    ul.equipe li:hover {
+      background-color: #1a1a1a;
+    }
+
+    ul.equipe img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+
+    .info-membro {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info-membro span {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #ff69b4;
+    }
+
+    .info-membro a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    .info-membro a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2>Nossa Equipe</h2>
+
+  <ul class="equipe">
+    <li>
+      <img src="static/fotos/alex.png" alt="Alex Brito">
+      <div class="info-membro">
+        <span>Alex Brito</span>
+        <a href="https://www.linkedin.com/in/alexjdebrito" target="_blank">LinkedIn</a>
+        <a href="https://github.com/alexjdebrito" target="_blank">GitHub</a>
+      </div>
+    </li>
+
+    <li>
+      <img src="static/fotos/everton.png" alt="Everton Fernandes">
+      <div class="info-membro">
+        <span>Everton Fernandes</span>
+        <a href="https://www.linkedin.com/in/everton-silva-b44b31349/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/evertonsilvaof" target="_blank">GitHub</a>
+      </div>
+    </li>
+
+    <li>
+      <img src="static/fotos/jasmin.png" alt="Jasmin Cleide">
+      <div class="info-membro">
+        <span>Jasmin Cleide</span>
+        <a href="https://www.linkedin.com/in/jasmin-cleide-16148531a/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/dasmii" target="_blank">GitHub</a>
+      </div>
+    </li>
+
+    <li>
+      <img src="static/fotos/sarah.png" alt="Sarah Barreto">
+      <div class="info-membro">
+        <span>Sarah Barreto</span>
+        <a href="https://www.linkedin.com/in/sarahbarreto/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/sarahmsbarreto" target="_blank">GitHub</a>
+      </div>
+    </li>
+  </ul>
+
+
+  </body>
+</html>
+
+{% endblock %}
