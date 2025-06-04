@@ -38,7 +38,7 @@
 
 Foi implementado o
 
-####import google.generativeai as genai
+#### import google.generativeai as genai
 
 Para acessar os modelos da linha Gemini. 
 Esse SDK facilita o envio de perguntas e 
@@ -46,19 +46,19 @@ o recebimento de respostas.
 
 Logo depois foi configurado a chave:
 
-####genai.configure(api_key="AIzaSyA8h_ugTP7OMGz8sMUeq1gvrDIDh0H-lG0")
+#### genai.configure(api_key="AIzaSyA8h_ugTP7OMGz8sMUeq1gvrDIDh0H-lG0")
 
 esse exemplo acima configura a chave de API, que é usada para autenticar seu aplicativo com a API do Gemini. Essa chave é sensível e não deve ser exposta em código público, pois pode ser usada por terceiros para consumir sua cota.
 
 próximo passo foi implementado o modelo:
 
-####model = genai.GenerativeModel("gemini-2.0-flash")
+#### model = genai.GenerativeModel("gemini-2.0-flash")
 
 gemini-2.0-flash é uma versão otimizada para respostas rápidas e baixo custo.
 
 acrescentamos também essa função abaixo:
 
-####def perguntar_gemini(pergunta): try: response = model.generate_content(pergunta) return response.text except Exception as e: return f"Erro: {str(e)}"
+#### def perguntar_gemini(pergunta): try: response = model.generate_content(pergunta) return response.text except Exception as e: return f"Erro: {str(e)}"
 
 Essa função: 
 -Recebe uma pergunta como string (pergunta); 
@@ -67,7 +67,7 @@ Essa função:
 -Se houver erro (Ex:falta de internet, chave inválida, problema com a API), 
 -retorna a mensagem de erro.
 
-##Resumo da integração: 
+## Resumo da integração: 
 1-Instala-se o SDK com: pip install google-generativeai 
 2-Usa-se a API Key do Google AI Studio. 
 3-Um modelo (GenerativeModel) é implementado. 
