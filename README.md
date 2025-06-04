@@ -81,7 +81,7 @@ Pré-requisitos
 •⁠  ⁠Git (opcional)
 •⁠  ⁠Instalar dependências:
 
-pip install flask python-dotenv requests
+pip install flask
 
 # Passo à Passo:
 
